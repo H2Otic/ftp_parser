@@ -16,16 +16,6 @@ Requirements
     from parser.zg_parser import ZakupkiGovCompanyParser
 
 
-    SETTINGS = {
-        'HOST': '...',
-        'LOGIN': '...',
-        'PASSWORD': '...'        
-    }
-
-    parser = ZakupkiGovCompanyParser(
-        SETTINGS['HOST'],
-        SETTINGS['LOGIN'],
-        SETTINGS['PASSWORD']
-    )
+    parser = ZakupkiGovCompanyParser(host='host', login='login', password='pass')
 
     parser.extract_data():
